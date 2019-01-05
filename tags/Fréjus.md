@@ -1,0 +1,4 @@
+---
+layout: tagpage
+title: "#Fréjus"
+---

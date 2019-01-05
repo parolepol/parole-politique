@@ -1,0 +1,60 @@
+<div class="sidebar">
+  <h1 class="side-title"><a href="{{ "/" | relative_url }}">
+    Parole<br>
+    <span class="text-primary">#Politique</span>
+  </a></h1>
+
+  <h2 class="text-muted subtitle">{{ site.tagline }}</h2>
+
+  <p class="text-muted font-italic">{{ site.description }}</p>
+
+  <blockquote class="blockquote small-quote">
+    <p class="mb-0">L'homme supérieur sait les discours de ses adversaires et
+      ses adversaires ne savent pas les siens.
+    </p>
+    <footer class="blockquote-footer">Henri Boucher,
+      <cite title="Les pensées, maximes et réflexions">Les pensées, maximes et
+        réflexions
+      </cite>
+    </footer>
+  </blockquote>
+
+  <h5>Personnalités</h5>
+  <p>
+    {% for figure in site.data.tags.figures %}
+      {% assign tag = figure[0] %}
+      {% include tag.html name=tag %}
+    {% endfor %}
+  </p>
+
+  <h5>Partis et groupes</h5>
+  <p>
+    {% for group in site.data.tags.groups %}
+      {% assign tag = group[0] %}
+      {% include tag.html name=tag %}
+    {% endfor %}
+  </p>
+
+  <h5>Autres étiquettes</h5>
+  <p>
+    {% for tag in site.tags %}
+      {% assign tagname = tag[0] %}
+      {% if site.data.tags.figures[tagname] %}
+      {% elsif site.data.tags.groups[tagname] %}
+      {% else %}
+        {% include tag.html name=tagname %}
+      {% endif %}
+    {% endfor %}
+  </p>
+
+  {% include pagination-links.html %}
+
+  <p class="small">
+    <a href="{{ "/design/" | relative_url }}" class="small-link">Charte graphique</a><br>
+    Contact : {% include twitter-link.html %}<br>
+    Réalisé avec <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> et
+    <a href="https://pages.github.com/" target="_blank">GitHub Pages</a><br>
+    &copy; {{ site.time | date: '%Y' }} {% include twitter-link.html %}<br>
+    Tous droits réservés sur les contenus originaux
+  </p>
+</div>

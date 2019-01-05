@@ -1,0 +1,31 @@
+<div class="{{ include.class }}">
+  <nav aria-label="Navigation">
+    <ul class="pagination">
+      <li class="page-item{% unless paginator.previous_page %} disabled{% endunless %}">
+        {%- capture recent_url -%}
+          {%- if paginator.page > 2 -%}
+            {{- "/page" | append: paginator.previous_page | append: "/" -}}
+          {%- else -%}
+            {{- "/" -}}
+          {%- endif -%}
+        {%- endcapture -%}
+        <a class="page-link" href="{{ recent_url | relative_url }}" aria-label="Plus récent">
+          <span aria-hidden="true">&laquo;</span>
+          <span class="sr-only">Plus récent</span>
+        </a>
+      </li>
+      <li class="page-item {% unless paginator.previous_page %} active{% endunless %}"><a class="page-link" href="{{ "/" | relative_url }}">1</a></li>
+
+    {% for i in (2..paginator.total_pages) %}
+      <li class="page-item{% if paginator.page == i %} active{% endif %}"><a class="page-link" href="{{ "/page" | append: i | append: "/" | relative_url }}">{{ i }}</a></li>
+    {% endfor %}
+
+      <li class="page-item{% unless paginator.next_page %} disabled{% endunless %}">
+        <a class="page-link" href="{{ "/page" | append: paginator.next_page | append: "/" | relative_url }}" aria-label="Plus ancien">
+          <span aria-hidden="true">&raquo;</span>
+          <span class="sr-only">Plus ancien</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>

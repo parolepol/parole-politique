@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "fr" }}">
+  {% include head.html %}
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4">
+          {% include sidebar.html %}
+        </div>
+        <div class="col-lg-6">
+          <main>
+            {{ content }}
+          </main>
+        </div>
+      </div>
+    </div>
+    <!-- To allow including Twitter tweets to any page -->
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </body>
+</html>

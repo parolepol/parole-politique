@@ -1,0 +1,27 @@
+months:
+  - janvier
+  - février
+  - mars
+  - avril
+  - mai
+  - juin
+  - juillet
+  - août
+  - septembre
+  - octobre
+  - novembre
+  - décembre
+
+months-short:
+  - jan.
+  - fév.
+  - mars
+  - avr.
+  - mai
+  - juin
+  - juil.
+  - août
+  - sep.
+  - oct.
+  - nov.
+  - déc.

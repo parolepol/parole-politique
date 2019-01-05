@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<h2>
+  {% for tag in page.tags %}
+    {% include tag.html name=tag %}
+  {% endfor %}
+</h2>
+
+<h3>{{ page.title }}</h3>
+
+<span class="post-date">{% include date-fr date=page.date %}</span>
+
+<div class="video">
+  {% include video.html video=page %}
+</div>
+
+<blockquote class="blockquote">
+  {{ content }}
+</blockquote>
+
+{% comment %}
+<div class="related">
+  <h4>Interventions semblables</h4>
+  <ul>
+    {% for post in site.related_posts limit:3 %}
+      <li>
+        <h5><a href="{{ site.baseurl }}{{ post.url }}">
+          {{ post.title }} <small>{{ post.date | date_to_string }}</small>
+        </a></h5>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endcomment %}

@@ -1,0 +1,4 @@
+{% assign site.tags = "" | split: ", " %}
+{% for post in site.posts %}
+  {% assign site.tags = site.tags | concat: post.tags | uniq %}
+{% endfor %}

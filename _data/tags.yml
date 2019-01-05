@@ -1,0 +1,146 @@
+# Colors form Google Agenda
+colors:
+  - "#AD1457"
+  - "#F4511E"
+  - "#E4C441"
+  - "#0B8043"
+  - "#3F51B5"
+  - "#8E24AA"
+  - "#D81B60"
+  - "#EF6C00"
+  - "#C0CA33"
+  - "#009688"
+  - "#7986CB"
+  - "#795548"
+  - "#D50000"
+  - "#F09300"
+  - "#7CB342"
+  - "#039BE5"
+  - "#B39DDB"
+  - "#616161"
+  - "#E67C73"
+  - "#F6BF26"
+  - "#33B679"
+  - "#4285F4"
+  - "#9E69AF"
+  - "#A79B8E"
+
+# Add people to this list, and give them a color
+# They key is a twitter hashtag or name (including # or @ char)
+figures:
+  "@EmmanuelMacron":
+    color: "#B39DDB"
+  "@jclagarde":
+    color: "#8E24AA"
+  "@Valerie_Rabault":
+    color: "#D81B60"
+  "@PatrickMignola":
+    color: "#F09300"
+  "@MLP_officiel":
+    color: "#3F51B5"
+  "@JLMelenchon":
+    color: "#D50000"
+  "@EPhilippePM":
+    color: "#7986CB"
+  "#JaclineMouraud":
+    color: "#A79B8E"
+  "#ChristianJacob":
+    color: "#4285F4"
+  "@brunepoirson":
+    color: "#B39DDB"
+  "@dupontaignan":
+    color: "#3F51B5"
+  "@StanGuerini":
+    color: "#B39DDB"
+
+# Add groups and parties to this list, and give them a color
+# They key is a twitter hashtag or name (including # or @ char)
+groups:
+  "@FranceInsoumise":
+    color: "#D50000"
+  "@partisocialiste":
+    color: "#D81B60"
+  "@modem":
+    color: "#F09300"
+  "@GroupeModem":
+    color: "#F09300"
+  "@enmarchefr":
+    color: "#B39DDB"
+  "@UDI_off":
+    color: "#8E24AA"
+  "@DeputesUDIAGIR":
+    color: "#8E24AA"
+  "@Republicains_An":
+    color: "#4285F4"
+  "@RNational_off":
+    color: "#3F51B5"
+
+# Not all tags need to be listed here. Add a tag if you want to fix its color
+# They key is a twitter hashtag or name (including # or @ char)
+other_tags:
+  "@AssembleeNat":
+    color: "#039BE5"
+  "@Elysee":
+    color: "#039BE5"
+  "@Matignon":
+    color: "#039BE5"
+  "#GiletsJaunes":
+    color: "#C0CA33"
+  "#Climat":
+    color: "#7CB342"
+
+# figures:
+#   - "@EmmanuelMacron"
+#   - "@jclagarde"
+#   - "@Valerie_Rabault"
+#   - "@PatrickMignola"
+#   - "@MLP_officiel"
+#   - "@JLMelenchon"
+#   - "@EPhilippePM"
+#   - "#JaclineMouraud"
+#   - "#ChristianJacob"
+#
+
+#
+# figures2:
+#   macron:
+#     tag: "@EmmanuelMacron"
+#     color: "#A79B8E"
+#   lagarde:
+#     tag: "@jclagarde"
+#     color: "#A79B8E"
+#   rabault:
+#     tag: "@Valerie_Rabault"
+#     color: "#A79B8E"
+#   mignola:
+#     tag: "@PatrickMignola"
+#     color: "#A79B8E"
+#   le_pen_marine:
+#     tag: "@MLP_officiel"
+#     color: "#A79B8E"
+
+# colors:
+#   - red
+#   - green
+#   - blue
+#   - orange
+#   - cyan
+#   - purple
+#   - magenta
+
+# colors:
+#   - "#FF5252"
+#   - "#FF4081"
+#   - "#E040FB"
+#   - "#7C4DFF"
+#   - "#536DFE" 
+#   - "#448AFF"
+#   - "#0091EA"
+#   - "#0097A7"
+#   - "#009688"
+#   - "#43A047"
+#   - "#558B2F"
+#   - "#827717"
+#   - "#E65100"
+#   - "#FF3D00"
+#   - "#A1887F"

@@ -1,0 +1,54 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title:            Parole Politique
+tagline:          Discours bruts
+email:            contact@parole-politique.fr
+description: >-   # this means to ignore newlines until "baseurl:"
+  Prenez le temps d'écouter les discours sans les filtres de
+  l'information en continue qui selectionne les petites phrases et les sortent
+  leur contexte.
+baseurl:          /parole-politique           # site subpath, e.g. /blog
+url:              http://parole-politique.fr  # site base hostname & protocol
+google_analytics: UA-105651383-2              # GA ID for this site
+
+# Permalinks
+permalink:        pretty    # see https://jekyllrb.com/docs/permalinks/
+
+author:
+  name:           Parole Politique
+  twitter:        ParolePol
+  github:         parolepol
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-paginate
+  # - jekyll-feed
+
+# jekyll-paginate settings
+paginate:         10
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

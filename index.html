@@ -1,0 +1,10 @@
+---
+layout: default
+title: Accueil
+---
+
+{% for post in paginator.posts %}
+  {% include post.html post=post %}
+{% endfor %}
+
+{% include pagination-links.html class="pagination-container" %}

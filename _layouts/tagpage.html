@@ -1,0 +1,8 @@
+---
+layout: default
+---
+<h1><span class="badge badge-pill badge-primary" style="background-color: {% include tag-color tag_name=page.title %}">{{ page.title }}</span></h1>
+
+{% for post in site.tags[page.title] %}
+  {% include post.html post=post %}
+{% endfor %}

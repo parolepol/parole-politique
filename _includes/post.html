@@ -1,0 +1,17 @@
+<div class="video">
+  {% include video.html video=post %}
+
+  <h3>{{ include.post.title }}
+    {% if include.post.clickable%}
+      <small><a href="{{ include.post.url | relative_url }}" class="text-muted font-monospace">verbatim</a></small>
+    {% endif %}
+  </h3>
+
+  <div>
+    {% for tag in include.post.tags %}
+      {% include tag.html name=tag %}
+    {% endfor %}
+  </div>
+
+  <span class="post-date">{% include date-fr date=include.post.date %}</span>
+</div>

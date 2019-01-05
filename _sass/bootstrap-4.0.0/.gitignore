@@ -1,0 +1,8 @@
+# Ignore all but scss dir
+*
+
+# Don't ignore all that
+!.gitignore
+!scss/
+!scss/*/
+!scss/*/*

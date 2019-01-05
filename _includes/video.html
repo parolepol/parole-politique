@@ -1,0 +1,27 @@
+{% if include.video.source == "dailymotion" %}
+  <div class="video-container dailymotion">
+    <iframe width="480" height="270"
+      src="{{ include.video.videourl }}"
+      frameborder="0" allow="autoplay" allowfullscreen>
+    </iframe>
+  </div>
+{% elsif include.video.source == "youtube" %}
+  <div class="video-container youtube">
+    <iframe src="{{ include.video.videourl }}"
+      frameborder="0" allowfullscreen>
+    </iframe>
+  </div>
+{% elsif include.video.source == "facebook" %}
+  <div class="video-container facebook">
+    <iframe width="{{ include.video.width }}" height="{{ include.video.height }}"
+      src="{{ include.video.videourl }}"
+      frameborder="0" style="border:none;overflow:hidden"
+      scrolling="no" allowTransparency="true"
+      allow="encrypted-media" allowFullScreen="true">
+    </iframe>
+  </div>
+{% elsif include.video.source == "twitter" %}
+  <div class="video-container twitter">
+    {{ include.video.tweet }}
+  </div>
+{% endif %}

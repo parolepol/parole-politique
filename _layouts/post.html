@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<h1>{{ include.post.title }}</h1>
+
+<span class="post-date">{{ include.post.date | date_to_string }}</span>
+
+<div>
+  {% for tag in include.post.tags %}
+    {%- assign tag_url = tag | downcase | remove: "#" -%}
+    <a href="{{ site.baseurl }}/tags/{{ tag_url }}" class="badge badge-pill badge-primary">
+      {{- tag -}}
+    </a>
+  {% endfor %}
+</div>
+
+<div class="video">
+  {% include video.html video=include.post %}
+</div>
+
+{{ content }}
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    {% for post in site.related_posts limit:3 %}
+      <li>
+        <h3>
+          <a href="{{ post.url }}">
+            {{ post.title }}
+            <small>{{ post.date | date_to_string }}</small>
+          </a>
+        </h3>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

@@ -1,0 +1,12 @@
+{%- if site.data.tags.figures[include.tag_name].color -%}
+  {%- assign color = site.data.tags.figures[include.tag_name].color -%}
+{%- elsif site.data.tags.groups[include.tag_name].color -%}
+  {%- assign color = site.data.tags.groups[include.tag_name].color -%}
+{%- elsif site.data.tags.other_tags[include.tag_name].color -%}
+  {%- assign color = site.data.tags.other_tags[include.tag_name].color -%}
+{%- else -%}
+  {%- assign n_colors = site.data.tags.colors | size -%}
+  {%- assign i = include.tag_name | size | modulo: n_colors -%}
+  {%- assign color = site.data.tags.colors[i] -%}
+{%- endif -%}
+{{ color }}
