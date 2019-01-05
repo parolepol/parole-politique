@@ -4,5 +4,6 @@
 # Don't ignore all that
 !.gitignore
 !scss/
+!scss/*
 !scss/*/
 !scss/*/*
