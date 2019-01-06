@@ -20,7 +20,7 @@ description: >-   # this means to ignore newlines until "baseurl:"
   Prenez le temps d'écouter les discours sans les filtres de
   l'information en continue qui selectionne les petites phrases et les sort de
   leur contexte.
-baseurl:          ""                            # site subpath, e.g. /blog
+baseurl:          /parole-politique             # site subpath, e.g. /blog
 url:              https://parole-politique.fr   # site base hostname & protocol
 google_analytics: UA-105651383-2                # GA ID for this site
 
