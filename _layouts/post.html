@@ -9,7 +9,7 @@ layout: default
 <div>
   {% for tag in include.post.tags %}
     {%- assign tag_url = tag | downcase | remove: "#" -%}
-    <a href="{{ site.baseurl }}/tags/{{ tag_url }}" class="badge badge-pill badge-primary">
+    <a href="{{ "/tags/" | append: tag_url | relative_url }}" class="badge badge-pill badge-primary">
       {{- tag -}}
     </a>
   {% endfor %}
