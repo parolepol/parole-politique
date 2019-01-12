@@ -28,6 +28,13 @@ h2.text-muted.subtitle {
   padding: 0 0 3em;
 }
 
+.video h3 a:hover {
+  text-decoration: none;
+  & small {
+    text-decoration: underline;
+  }
+}
+
 .video-container {
   width: 100%;
 }
